@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QueryTube | Semantic Search</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+ 
+<body>
+ 
+    <div class="background-glow"></div>
+ 
+    <div class="container">
+ 
+        <div class="branding">
+<div class="logo-container">
+<i class="fab fa-youtube logo-icon"></i>
+<h1>Query<span>Tube</span></h1>
+</div>
+<p>Unlock the power of <span class="highlight">Semantic Search</span> for YouTube.</p>
+</div>
+ 
+        <div class="search-box-container">
+<div class="search-box">
+<i class="fas fa-search search-icon"></i>
+<input type="text" id="query" placeholder="Describe the video you're looking for...">
+<button onclick="searchVideos()">Search</button>
+</div>
+</div>
+ 
+        <div id="loading-spinner" class="hidden">
+<div class="spinner"></div>
+<p>Analyzing video transcripts...</p>
+</div>
+ 
+        <div id="results"></div>
+ 
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+ 
+</html>
+ 
